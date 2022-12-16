@@ -1,2 +1,2 @@
 # tugas-lks-module-cms
-Repository untuk 
+Repository untuk menyimpan module-cms mengenai tentang berita covid-19 di indonesia
