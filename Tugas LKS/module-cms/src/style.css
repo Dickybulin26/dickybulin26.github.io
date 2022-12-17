@@ -1,0 +1,499 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  color: #1b1b1b;
+  background-color: #e6e6e6;
+}
+
+nav {
+  z-index: 100;
+  width: 100%;
+  height: auto;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  font-size: 1rem;
+  background: rgba(230, 230, 230, 0.41);
+  backdrop-filter: blur(6.4px);
+  -webkit-backdrop-filter: blur(6.4px);
+}
+
+nav.sticky {
+  position: sticky;
+  top: 0;
+}
+
+nav .logo {
+  font-size: 2rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.nav-bar {
+  position: relative;
+}
+
+.nav-bar ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+.btn {
+  box-shadow: 1px 1px 24px -4px rgba(27, 27, 27, 0.67);
+  -webkit-box-shadow: 1px 1px 24px -4px rgba(27, 27, 27, 0.67);
+  -moz-box-shadow: 1px 1px 24px -4px rgba(27, 27, 27, 0.67);
+  border-radius: 5px;
+  width: 90px;
+  padding: 5px;
+  text-align: center;
+  background: #e6e6e6;
+  outline: none;
+  margin-left: 2rem;
+  opacity: 0.7;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn.click {
+  opacity: 1;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.nav-bar .drop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6.5rem;
+  margin-top: 3px;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.drop a {
+  width: 100%;
+  height: 100%;
+  padding: 3px 10px;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.7;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.drop a:hover {
+  opacity: 1;
+}
+
+.nav-bar .drop.active {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.first-page {
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+}
+
+.first-page h1 {
+  background: url("text-clip-image.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 7px 8px 12px rgba(27, 27, 27, 0.6);
+  font-size: 300px;
+  font-weight: 700;
+  margin-top: -100px;
+  width: 100%;
+  margin-left: 12rem;
+}
+
+.first-page .slogan {
+  margin-left: 40rem;
+  margin-top: -20px;
+  padding-left: 1rem;
+  border-left: 3px solid #e42900;
+}
+
+.text {
+  text-align: center;
+  font-size: 25px;
+}
+
+.second-slogan {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.second-page {
+  width: 100%;
+  height: 100%;
+}
+
+.more-trend,
+.more-event {
+  box-shadow: 1px 1px 24px -4px rgba(27, 27, 27, 0.67);
+  -webkit-box-shadow: 1px 1px 24px -4px rgba(27, 27, 27, 0.67);
+  -moz-box-shadow: 1px 1px 24px -4px rgba(27, 27, 27, 0.67);
+  background-color: #e6e6e6;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  float: right;
+  margin-right: 5rem;
+  margin-top: -5rem;
+}
+
+.trend-title,
+.event-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 3rem 5rem;
+  border-bottom: 3px solid #e42900;
+  width: 140px;
+}
+
+.news {
+  width: 90%;
+  position: relative;
+  margin: 3rem 5rem;
+  display: flex;
+}
+
+.news .pictures {
+  height: auto;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  border-radius: 7px;
+  box-shadow: 5px 6px 23px -4px rgba(27, 27, 27, 0.67);
+  -webkit-box-shadow: 5px 6px 23px -4px rgba(27, 27, 27, 0.67);
+  -moz-box-shadow: 5px 6px 23px -4px rgba(27, 27, 27, 0.67);
+}
+
+.news .title-description {
+  margin: 1rem 2rem;
+  text-align: left;
+}
+
+.news .title-description .title-news {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news .title-description .desc-news {
+  opacity: 0.7;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.third-page {
+  width: 100%;
+  height: 100%;
+}
+
+.event {
+  border-left: 2px solid #e42900;
+  padding-left: 1rem;
+  width: 100%;
+  position: relative;
+  margin: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.event .title-event {
+  font-size: 15px;
+}
+
+.event .event-date {
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  background-color: #1b1b1b;
+  color: #e6e6e6;
+}
+
+.foot-desc {
+  padding: 2rem 5rem;
+  justify-content: space-between;
+  display: flex;
+}
+
+footer .join {
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.join .line-foot {
+  background-color: #e42900;
+  width: 165px;
+  height: 2px;
+  margin-top: 5px;
+  position: absolute;
+}
+
+.copyright {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 15px;
+  text-align: center;
+}
+
+.foot-desc .social-media-icon {
+  display: flex;
+  position: relative;
+}
+
+.social-media-icon a img {
+  margin-right: 18px;
+  margin-top: 1rem;
+}
+
+.logo-facebook a img {
+  height: 17px;
+  width: 10px;
+}
+
+.logo-twitter a img {
+  height: 17px;
+  width: 20px;
+}
+
+.logo-instagram a img {
+  height: 17px;
+  width: 17px;
+}
+
+.logo-linkedin a img {
+  height: 17px;
+  width: 20px;
+}
+
+.logo-youtube a img {
+  margin-top: 17.5px;
+  height: 17px;
+  width: 23px;
+}
+
+@media only screen and (max-width: 845px) {
+  .first-page h1 {
+    background: url("text-clip-image.jpg");
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 7px 8px 12px rgba(27, 27, 27, 0.6);
+    font-size: 180px;
+    font-weight: 700;
+    margin-top: -1rem;
+    width: 100%;
+    margin-left: 5rem;
+  }
+
+  .first-page .slogan {
+    margin-left: 20rem;
+    margin-top: -10px;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-left: 3px solid #e42900;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    z-index: 100;
+    padding: 1rem 3rem;
+    font-size: 10px;
+  }
+
+  nav .logo {
+    font-size: 12px;
+    margin-top: 1px;
+    font-weight: bold;
+  }
+
+  .btn {
+    font-size: 10px;
+  }
+
+  .nav-bar .drop {
+    margin-left: 5rem;
+  }
+
+  .first-page h1 {
+    font-size: 120px;
+    font-weight: 700;
+    margin-top: -2rem;
+    margin-left: 2.5rem;
+  }
+
+  .first-page .slogan {
+    margin-left: 10rem;
+    font-size: 10px;
+    margin-top: -12px;
+    padding-left: 7px;
+    border-left: 2px solid #e42900;
+  }
+
+  .text {
+    margin-top: -16rem;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .second-slogan {
+    margin: 0 3rem;
+    text-align: center;
+    font-size: 10px;
+    opacity: 0.7;
+  }
+
+  .more-trend,
+  .more-event {
+    font-size: 10px;
+    padding: 4px 8px;
+    float: right;
+    margin-right: 3rem;
+    margin-top: -4.5rem;
+  }
+
+  .trend-title,
+  .event-title {
+    font-size: 15px;
+    margin: 3rem;
+    width: 100px;
+  }
+
+  .news {
+    margin: 3rem 3rem;
+  }
+
+  .news .pictures {
+    height: auto;
+    width: 150px;
+  }
+
+  .news .title-description {
+    margin: 1rem 2rem;
+    text-align: left;
+  }
+
+  .news .title-description .title-news {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .news .title-description .desc-news {
+    line-height: 17px;
+    font-size: 10px;
+  }
+
+  .event {
+    padding-right: 5.5rem;
+    margin: 2rem 3rem;
+  }
+
+  .event .title-event {
+    font-size: 10px;
+  }
+
+  .event .event-date {
+    opacity: 0.7;
+    font-weight: lighter;
+    font-size: 8px;
+  }
+
+  .foot-desc {
+    padding: 2rem 3rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  footer .join {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .join .line-foot {
+    width: 120px;
+  }
+
+  .copyright {
+    margin-top: -0.2rem;
+    font-size: 10px;
+  }
+
+  .social-media-icon a img {
+    margin-right: 10px;
+    margin-top: 1rem;
+  }
+
+  .logo-facebook a img {
+    height: 14px;
+    width: 10px;
+  }
+
+  .logo-twitter a img {
+    height: 14px;
+    width: 15px;
+  }
+
+  .logo-instagram a img {
+    height: 14px;
+    width: 17px;
+  }
+
+  .logo-linkedin a img {
+    height: 14px;
+    width: 18px;
+  }
+
+  .logo-youtube a img {
+    margin-top: 17.5px;
+    height: 14px;
+    width: 20px;
+  }
+}
