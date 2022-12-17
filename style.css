@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins";
-  scroll-behavior: smooth;
 }
 
 body {
@@ -317,7 +316,32 @@ footer .join {
   width: 23px;
 }
 
-@media only screen and (max-width: 845px) {
+@media only screen and (max-width: 724px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    z-index: 100;
+    padding: 1rem 2rem;
+    font-size: 15px;
+  }
+
+  nav .logo {
+    font-size: 15px;
+    margin-top: 1px;
+    font-weight: bold;
+  }
+
+  .btn {
+    width: 80px;
+    font-size: 15px;
+  }
+
+  .nav-bar .drop {
+    margin-left: 6rem;
+  }
+
   .first-page h1 {
     background: url("text-clip-image.jpg");
     -webkit-background-clip: text;
@@ -332,19 +356,136 @@ footer .join {
   }
 
   .first-page .slogan {
-    margin-left: 20rem;
+    margin-left: 15rem;
     margin-top: -10px;
     padding-left: 1rem;
-    font-size: 1rem;
+    font-size: 13px;
     border-left: 3px solid #e42900;
+  }
+
+  .text {
+    margin-top: -7rem;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .second-slogan {
+    margin: 0 2rem;
+    text-align: center;
+    font-size: 8px;
+    opacity: 0.7;
+  }
+
+  .more-trend,
+  .more-event {
+    font-size: 12px;
+    padding: 5px 8px;
+    float: right;
+    margin-right: 2rem;
+    margin-top: -3.5rem;
+  }
+
+  .trend-title,
+  .event-title {
+    font-size: 15px;
+    margin: 2rem;
+    width: 100px;
+    border-bottom: 2px solid #e42900;
+    width: 98px;
+  }
+
+  .news {
+    margin: 2rem;
+  }
+
+  .news .title-description .title-news {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .news .title-description .desc-news {
+    line-height: 20px;
+    font-size: 12px;
+  }
+
+  .event {
+    padding-right: 5.5rem;
+    margin: 2rem;
+  }
+
+  .event .title-event {
+    font-size: 13px;
+  }
+
+  .event .event-date {
+    opacity: 0.7;
+    font-weight: lighter;
+    font-size: 10px;
+  }
+
+  .foot-desc {
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  footer .join {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .join .line-foot {
+    width: 145px;
+  }
+
+  .copyright {
+    margin-top: -0.2rem;
+    font-size: 13px;
+  }
+
+  .social-media-icon a img {
+    margin-right: 15px;
+    margin-top: 1rem;
+  }
+
+  .logo-facebook a img {
+    height: 16px;
+    width: 10px;
+  }
+
+  .logo-twitter a img {
+    height: 16px;
+    width: 18px;
+  }
+
+  .logo-instagram a img {
+    height: 16px;
+    width: 17px;
+  }
+
+  .logo-linkedin a img {
+    height: 16px;
+    width: 18px;
+  }
+
+  .logo-youtube a img {
+    margin-top: 17.5px;
+    height: 16px;
+    width: 22px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
   nav {
     z-index: 100;
-    padding: 1rem 3rem;
-    font-size: 10px;
+    padding: 1rem 2rem;
+    font-size: 9px;
   }
 
   nav .logo {
@@ -354,24 +495,25 @@ footer .join {
   }
 
   .btn {
-    font-size: 10px;
+    width: 60px;
+    font-size: 9px;
   }
 
   .nav-bar .drop {
-    margin-left: 5rem;
+    margin-left: 4.7rem;
   }
 
   .first-page h1 {
-    font-size: 120px;
+    font-size: 110px;
     font-weight: 700;
     margin-top: -2rem;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
   }
 
   .first-page .slogan {
     margin-left: 10rem;
-    font-size: 10px;
-    margin-top: -12px;
+    font-size: 9px;
+    margin-top: 5px;
     padding-left: 7px;
     border-left: 2px solid #e42900;
   }
@@ -379,34 +521,36 @@ footer .join {
   .text {
     margin-top: -16rem;
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .second-slogan {
-    margin: 0 3rem;
+    margin: 0 2rem;
     text-align: center;
-    font-size: 10px;
+    font-size: 8px;
     opacity: 0.7;
   }
 
   .more-trend,
   .more-event {
-    font-size: 10px;
-    padding: 4px 8px;
+    font-size: 9px;
+    padding: 5px 8px;
     float: right;
-    margin-right: 3rem;
-    margin-top: -4.5rem;
+    margin-right: 2rem;
+    margin-top: -3rem;
   }
 
   .trend-title,
   .event-title {
-    font-size: 15px;
-    margin: 3rem;
+    font-size: 10px;
+    margin: 2rem;
     width: 100px;
+    border-bottom: 2px solid #e42900;
+    width: 65px;
   }
 
   .news {
-    margin: 3rem 3rem;
+    margin: 2rem;
   }
 
   .news .pictures {
@@ -431,7 +575,7 @@ footer .join {
 
   .event {
     padding-right: 5.5rem;
-    margin: 2rem 3rem;
+    margin: 2rem;
   }
 
   .event .title-event {
@@ -445,7 +589,7 @@ footer .join {
   }
 
   .foot-desc {
-    padding: 2rem 3rem;
+    padding: 2rem;
     align-items: center;
     justify-content: space-between;
     display: flex;

@@ -4,15 +4,14 @@ let subMenu = drop.querySelectorAll("a");
 
 //dropdown subMenu
 btn.addEventListener("click", () => {
-  btn.classList.add("click");
-  drop.classList.add("active");
+  btn.classList.toggle("click");
+  drop.classList.toggle("active");
 });
- 
+
 subMenu.forEach((menu) => {
   menu.addEventListener("click", () => {
     btn.innerHTML = menu.innerHTML;
     drop.classList.remove("active");
-    btn.classList.remove("click");
   });
 });
 
